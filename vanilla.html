@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <span>click number: 0</span>
+    <button id="btn">click me</button>
+  </body>
+  <script>
+    let count = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    const handleclick = (event) => {
+      count++;
+      span.innerText = `click number: ${count}`;
+    };
+
+    button.addEventListener("click", handleclick);
+  </script>
+</html>
